@@ -123,6 +123,11 @@ def choice_system(ch):
         mail_server = 'imap.gmail.com'
         return mail_server
 
+    if ch == 'mail':
+        mail_server = 'imap.mail.ru'
+        return mail_server
+
+
 # Websocket protocol
 class WSMailConsumer(WebsocketConsumer):
     def connect(self):
